@@ -1,0 +1,16 @@
+order_id,account_age_days,is_new_account,order_value,item_category,payment_method,discount_pct,shipping_billing_mismatch,ip_country_mismatch,device_reuse_signal,num_previous_orders,num_previous_returns,num_previous_chargebacks
+ORD-DEMO-001,400,false,1200,grocery,upi,5,false,false,false,25,0,0
+ORD-DEMO-002,5,true,3000,electronics,upi,0,false,false,false,0,0,0
+ORD-DEMO-003,1,true,45000,electronics,cod,2,true,true,true,0,0,2
+ORD-DEMO-004,300,false,3500,fashion,upi,45,false,false,false,15,3,0
+ORD-DEMO-005,10,true,8000,electronics,netbanking,15,true,false,false,1,0,0
+ORD-DEMO-006,180,false,2200,home,debit_card,10,false,false,false,8,1,0
+ORD-DEMO-007,90,false,1800,sports,upi,20,false,false,false,4,0,0
+ORD-DEMO-008,3,true,600,beauty,upi,5,false,false,false,0,0,0
+ORD-DEMO-009,2,true,4200,fashion,cod,50,false,false,false,0,0,0
+ORD-DEMO-010,15,false,60000,electronics,netbanking,5,false,true,true,2,0,1
+ORD-DEMO-011,250,false,450,grocery,cod,0,false,false,false,30,2,0
+ORD-DEMO-012,500,false,15000,electronics,upi,8,false,false,false,40,0,0
+ORD-DEMO-013,45,false,2800,fashion,debit_card,25,true,false,false,5,1,0
+ORD-DEMO-014,120,false,3200,home,netbanking,10,false,true,false,6,0,0
+ORD-DEMO-015,200,false,1600,sports,upi,15,false,false,false,12,4,0
