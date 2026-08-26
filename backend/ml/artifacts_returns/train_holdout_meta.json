@@ -1,0 +1,14 @@
+{
+  "target": "returned",
+  "train_rows": 16000,
+  "holdout_rows": 4000,
+  "train_positive_rate": 0.29125,
+  "holdout_positive_rate": 0.25425,
+  "scale_pos_weight": 2.4334763948497855,
+  "roc_auc": 0.6413994279613318,
+  "average_precision": 0.399155963180841,
+  "band_thresholds": {
+    "medium": 0.4589,
+    "high": 0.6779
+  }
+}

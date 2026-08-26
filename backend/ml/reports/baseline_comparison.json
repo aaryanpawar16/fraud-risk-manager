@@ -1,0 +1,24 @@
+{
+  "comparison_threshold": 0.25,
+  "holdout_rows": 4000,
+  "models": {
+    "xgboost": {
+      "description": "Gradient-boosted trees (300 estimators, depth 5) \u2014 the model used in production.",
+      "roc_auc": 0.7668,
+      "average_precision": 0.4526,
+      "precision_at_threshold": 0.1686,
+      "recall_at_threshold": 0.8451,
+      "f1_at_threshold": 0.2811
+    },
+    "logistic_regression": {
+      "description": "Plain logistic regression, balanced class weights, scaled features \u2014 a standard, interpretable baseline.",
+      "roc_auc": 0.7804908162145444,
+      "average_precision": 0.474014108615191,
+      "precision_at_threshold": 0.15120525931336742,
+      "recall_at_threshold": 0.915929203539823,
+      "f1_at_threshold": 0.25956112852664576
+    }
+  },
+  "roc_auc_improvement": -0.0137,
+  "average_precision_improvement": -0.0214
+}

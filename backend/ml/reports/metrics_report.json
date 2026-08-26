@@ -1,0 +1,281 @@
+{
+  "holdout_rows": 4000,
+  "holdout_positive_rate": 0.113,
+  "roc_auc": 0.7668,
+  "average_precision": 0.4526,
+  "cost_assumptions_inr": {
+    "false_positive_cost": 350,
+    "false_negative_cost": 4500
+  },
+  "best_cost_weighted_threshold": {
+    "threshold": 0.25,
+    "precision": 0.1686,
+    "recall": 0.8451,
+    "f1": 0.2811,
+    "tp": 382.0,
+    "fp": 1884.0,
+    "fn": 70.0,
+    "tn": 1664.0,
+    "expected_cost_inr": 974400.0
+  },
+  "threshold_sweep": [
+    {
+      "threshold": 0.05,
+      "precision": 0.1155,
+      "recall": 0.9845,
+      "f1": 0.2067,
+      "tp": 445,
+      "fp": 3408,
+      "fn": 7,
+      "tn": 140,
+      "expected_cost_inr": 1224300
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.1279,
+      "recall": 0.9403,
+      "f1": 0.2252,
+      "tp": 425,
+      "fp": 2897,
+      "fn": 27,
+      "tn": 651,
+      "expected_cost_inr": 1135450
+    },
+    {
+      "threshold": 0.15,
+      "precision": 0.1445,
+      "recall": 0.9115,
+      "f1": 0.2494,
+      "tp": 412,
+      "fp": 2440,
+      "fn": 40,
+      "tn": 1108,
+      "expected_cost_inr": 1034000
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.1566,
+      "recall": 0.8761,
+      "f1": 0.2658,
+      "tp": 396,
+      "fp": 2132,
+      "fn": 56,
+      "tn": 1416,
+      "expected_cost_inr": 998200
+    },
+    {
+      "threshold": 0.25,
+      "precision": 0.1686,
+      "recall": 0.8451,
+      "f1": 0.2811,
+      "tp": 382,
+      "fp": 1884,
+      "fn": 70,
+      "tn": 1664,
+      "expected_cost_inr": 974400
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.1821,
+      "recall": 0.7965,
+      "f1": 0.2964,
+      "tp": 360,
+      "fp": 1617,
+      "fn": 92,
+      "tn": 1931,
+      "expected_cost_inr": 979950
+    },
+    {
+      "threshold": 0.35,
+      "precision": 0.2009,
+      "recall": 0.6991,
+      "f1": 0.3121,
+      "tp": 316,
+      "fp": 1257,
+      "fn": 136,
+      "tn": 2291,
+      "expected_cost_inr": 1051950
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.2523,
+      "recall": 0.6062,
+      "f1": 0.3563,
+      "tp": 274,
+      "fp": 812,
+      "fn": 178,
+      "tn": 2736,
+      "expected_cost_inr": 1085200
+    },
+    {
+      "threshold": 0.45,
+      "precision": 0.3469,
+      "recall": 0.5288,
+      "f1": 0.4189,
+      "tp": 239,
+      "fp": 450,
+      "fn": 213,
+      "tn": 3098,
+      "expected_cost_inr": 1116000
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.4586,
+      "recall": 0.4779,
+      "f1": 0.468,
+      "tp": 216,
+      "fp": 255,
+      "fn": 236,
+      "tn": 3293,
+      "expected_cost_inr": 1151250
+    },
+    {
+      "threshold": 0.55,
+      "precision": 0.5241,
+      "recall": 0.458,
+      "f1": 0.4888,
+      "tp": 207,
+      "fp": 188,
+      "fn": 245,
+      "tn": 3360,
+      "expected_cost_inr": 1168300
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.5515,
+      "recall": 0.4381,
+      "f1": 0.4883,
+      "tp": 198,
+      "fp": 161,
+      "fn": 254,
+      "tn": 3387,
+      "expected_cost_inr": 1199350
+    },
+    {
+      "threshold": 0.65,
+      "precision": 0.5689,
+      "recall": 0.4204,
+      "f1": 0.4835,
+      "tp": 190,
+      "fp": 144,
+      "fn": 262,
+      "tn": 3404,
+      "expected_cost_inr": 1229400
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.5922,
+      "recall": 0.4049,
+      "f1": 0.4809,
+      "tp": 183,
+      "fp": 126,
+      "fn": 269,
+      "tn": 3422,
+      "expected_cost_inr": 1254600
+    },
+    {
+      "threshold": 0.75,
+      "precision": 0.6084,
+      "recall": 0.385,
+      "f1": 0.4715,
+      "tp": 174,
+      "fp": 112,
+      "fn": 278,
+      "tn": 3436,
+      "expected_cost_inr": 1290200
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.625,
+      "recall": 0.365,
+      "f1": 0.4609,
+      "tp": 165,
+      "fp": 99,
+      "fn": 287,
+      "tn": 3449,
+      "expected_cost_inr": 1326150
+    },
+    {
+      "threshold": 0.85,
+      "precision": 0.6667,
+      "recall": 0.3142,
+      "f1": 0.4271,
+      "tp": 142,
+      "fp": 71,
+      "fn": 310,
+      "tn": 3477,
+      "expected_cost_inr": 1419850
+    },
+    {
+      "threshold": 0.9,
+      "precision": 0.7091,
+      "recall": 0.1726,
+      "f1": 0.2776,
+      "tp": 78,
+      "fp": 32,
+      "fn": 374,
+      "tn": 3516,
+      "expected_cost_inr": 1694200
+    },
+    {
+      "threshold": 0.95,
+      "precision": 0.8788,
+      "recall": 0.0642,
+      "f1": 0.1196,
+      "tp": 29,
+      "fp": 4,
+      "fn": 423,
+      "tn": 3544,
+      "expected_cost_inr": 1904900
+    }
+  ],
+  "cost_sensitivity_analysis": {
+    "FN_cost_x1": {
+      "best_threshold": 0.25,
+      "min_expected_cost_inr": 974400
+    },
+    "FN_cost_x2": {
+      "best_threshold": 0.15,
+      "min_expected_cost_inr": 1214000
+    },
+    "FN_cost_x5": {
+      "best_threshold": 0.05,
+      "min_expected_cost_inr": 1350300
+    }
+  },
+  "drift_analysis_at_best_threshold": [
+    {
+      "slice": "slice_1_of_3",
+      "date_range": [
+        "2026-03-11 15:40:00",
+        "2026-04-16 20:03:00"
+      ],
+      "n_orders": 1333,
+      "precision": 0.1718,
+      "recall": 0.875,
+      "positive_rate": 0.114
+    },
+    {
+      "slice": "slice_2_of_3",
+      "date_range": [
+        "2026-04-16 20:15:00",
+        "2026-05-24 02:29:00"
+      ],
+      "n_orders": 1333,
+      "precision": 0.1789,
+      "recall": 0.8395,
+      "positive_rate": 0.1215
+    },
+    {
+      "slice": "slice_3_of_3",
+      "date_range": [
+        "2026-05-24 02:39:00",
+        "2026-06-29 22:40:00"
+      ],
+      "n_orders": 1334,
+      "precision": 0.1544,
+      "recall": 0.8188,
+      "positive_rate": 0.1034
+    }
+  ]
+}

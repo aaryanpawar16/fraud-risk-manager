@@ -1,0 +1,23 @@
+[
+  "account_age_days",
+  "is_new_account",
+  "order_value",
+  "discount_pct",
+  "shipping_billing_mismatch",
+  "ip_country_mismatch",
+  "device_reuse_signal",
+  "num_previous_orders",
+  "num_previous_returns",
+  "num_previous_chargebacks",
+  "item_category_beauty",
+  "item_category_electronics",
+  "item_category_fashion",
+  "item_category_grocery",
+  "item_category_home",
+  "item_category_sports",
+  "payment_method_cod",
+  "payment_method_credit_card",
+  "payment_method_debit_card",
+  "payment_method_netbanking",
+  "payment_method_upi"
+]

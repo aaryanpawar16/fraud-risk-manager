@@ -1,0 +1,9 @@
+{
+  "target": "chargeback",
+  "split_timestamp": "2026-03-11 15:40:00",
+  "train_rows": 16000,
+  "holdout_rows": 4000,
+  "train_positive_rate": 0.128625,
+  "holdout_positive_rate": 0.113,
+  "scale_pos_weight": 6.774538386783285
+}
