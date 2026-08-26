@@ -1,0 +1,16 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+networkx>=3.2
+reportlab>=4.1
+sqlalchemy>=2.0
+python-multipart>=0.0.9
+python-dotenv>=1.0
+
+# ML pipeline dependencies (ml/train.py, evaluate.py, explain.py)
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+xgboost>=2.0
+shap>=0.44
+joblib>=1.3
