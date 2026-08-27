@@ -155,6 +155,35 @@ button:disabled {
   }
 }
 
+/* ---- Scan-line sweep — used once on the secure-access transition's
+   closed card, reinforcing "verification in progress" right before it
+   opens. A single pass, not a loop: the whole SecureAccessTransition
+   component already short-circuits entirely under
+   prefers-reduced-motion (calls onComplete() immediately on mount, see
+   the component itself), so this never even renders in that case —
+   no separate reduced-motion guard needed here. ---- */
+
+@keyframes scan-sweep {
+  0% {
+    top: -8%;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    top: 106%;
+    opacity: 0;
+  }
+}
+
+.scan-sweep-line {
+  animation: scan-sweep 1s ease-in-out 0.3s 1 both;
+}
+
 /* ---- Keep muted caption text readable when its card's hover
    spotlight effect is active. --text-muted is a fairly low-contrast
    gray by design (it's meant to recede for de-emphasized text), which
@@ -178,3 +207,4 @@ button:disabled {
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
+
