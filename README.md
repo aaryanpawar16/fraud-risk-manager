@@ -63,7 +63,8 @@ cd fraud-risk-manager
 # 1. Train both models (skip if ml/artifacts already exist)
 cd backend/ml
 python generate_synthetic_data.py --n_orders 20000 --seed 42
-python train.py && python evaluate.py
+python train.py
+python evaluate.py
 python train_return_model.py
 python train_baseline_model.py
 pytest tests/ -v   # 49 passed
