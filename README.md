@@ -2,7 +2,7 @@
 
 [![Tests](https://github.com/aaryanpawar16/fraud-risk-manager/actions/workflows/tests.yml/badge.svg)](https://github.com/aaryanpawar16/fraud-risk-manager/actions/workflows/tests.yml)
 
-**Live demo:** https://fraud-risk-manager.vercel.app/ · **API docs:** https://risk-manager-api-ial0.onrender.com/docs
+**Live demo:** https://fraud-risk-manager.vercel.app/ · **API docs:** https://[risk-manager-api-ial0.onrender.com/docs](https://fraud-risk-manager.onrender.com/docs)
 
 *(Backend runs on Render's free tier — if it's been idle, the first
 request can take 30-60s to cold-start. Give it a moment before
