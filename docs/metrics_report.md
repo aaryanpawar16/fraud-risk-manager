@@ -39,13 +39,13 @@ below it. We reject that shortcut.
 |---|---|
 | Holdout size | 4,000 orders |
 | Holdout positive (chargeback) rate | 11.28% |
-| ROC-AUC | **0.764** |
-| Average Precision (PR-AUC) | **0.449** |
+| ROC-AUC | **0.767** |
+| Average Precision (PR-AUC) | **0.442** |
 
-ROC-AUC of 0.76 means the model ranks a random chargeback order above a
-random legitimate order ~76% of the time. We report Average Precision
+ROC-AUC of 0.77 means the model ranks a random chargeback order above a
+random legitimate order ~77% of the time. We report Average Precision
 alongside it because ROC-AUC can look optimistic on imbalanced data —
-PR-AUC of 0.449 against an 11.3% base rate is the more honest signal of
+PR-AUC of 0.442 against an 11.3% base rate is the more honest signal of
 how much the model actually helps triage.
 
 ## 3. Precision, recall, and F1 at multiple thresholds
@@ -145,7 +145,9 @@ exceeds a set tolerance (our reference implementation flags >2pt drift).
 
 Beyond the model metrics, we unit-test the *evaluation logic itself* —
 because a bug in the cost formula would quietly invalidate every claim
-above. 41 tests, all passing, covering:
+above. 41 core tests here, all passing, plus 8 more covering the return
+model (§7.4) and baseline comparison (§8) — **49 tests total** across
+the whole `ml/` pipeline:
 
 ```
 41 passed in ~20s
@@ -250,7 +252,7 @@ miss entirely.
 
 ### 7.4 Test coverage
 
-`ml/tests/test_return_model.py` (4 tests, part of the full 45-test
+`ml/tests/test_return_model.py` (4 tests, part of the full 49-test
 suite):
 - `chargeback` is excluded from the return model's own feature matrix
   (leakage guard, mirroring how `returned` is excluded from the
