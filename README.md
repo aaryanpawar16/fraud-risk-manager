@@ -20,7 +20,7 @@ four, live and tested, not just one with the others implied:
 
 | Track direction | What's built |
 |---|---|
-| **Return-risk scorer** | A genuinely separate model trained on real return outcomes — not the chargeback model's score reused as a proxy. See [`backend/ml/docs/metrics_report.md`](backend/ml/docs/metrics_report.md) for how we caught and fixed an initial version that scored barely above random. |
+| **Return-risk scorer** | A genuinely separate model trained on real return outcomes — not the chargeback model's score reused as a proxy. See [`docs/metrics_report.md`](docs/metrics_report.md) for how we caught and fixed an initial version that scored barely above random. |
 | **Chargeback evidence responder** | One click compiles delivery proof, device/IP match, and order history into a real, downloadable dispute-response PDF. |
 | **Fraud-spike detector** | Rolling z-score anomaly detection on weekly chargeback rate — flags when fraud is trending up across the whole book, not just which single order looks risky. |
 | **Abuse-ring sentinel** | NetworkX clustering on shared device/address identifiers within a tight time window, distinguishing coordinated rings from incidental overlap. |
