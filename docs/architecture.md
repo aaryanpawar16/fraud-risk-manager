@@ -79,7 +79,7 @@ implied by the chargeback model alone. `train_return_model.py` makes it
 literally true — trained independently on the `returned` label, with
 `chargeback` excluded as a leakage feature the same way `returned` is
 excluded from the chargeback model. They frequently disagree on the
-same order (see [`backend/ml/docs/metrics_report.md`](..docs/metrics_report.md) for a
+same order (see [`docs/metrics_report.md`](docs/metrics_report.md) for a
 measured example) — proof they're not redundant.
 
 ### 2. `backend/` — FastAPI (always-on, Render)
