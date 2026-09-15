@@ -104,7 +104,7 @@ type StatItem =
 const STATS: StatItem[] = [
   { kind: "number", label: "ROC-AUC on held-out data", value: 0.767, decimals: 3 },
   { kind: "text", label: "Time-based split, verified by tests", display: "Zero leakage" },
-  { kind: "number", label: "Automated tests, all passing", value: 93, decimals: 0, suffix: "/93" },
+  { kind: "number", label: "Automated tests, all passing", value: 103, decimals: 0, suffix: "/103" },
 ];
 
 export default function Landing({ onEnterConsole }: { onEnterConsole: () => void }) {
